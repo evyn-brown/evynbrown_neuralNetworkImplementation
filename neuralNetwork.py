@@ -87,10 +87,7 @@ neural_network_model.compile(loss='mse', metrics=['mae'], optimizer='adam')
 #fit model to training set, epochs to 30 to ensure consistent data
 neural_network_model.fit(features_train, labels_train, epochs=30, validation_split=0.2)
 
-
 #   ***     Model Interpretation     ***
-
-
 #get predictions
 predictions = neural_network_model.predict(features_test)
 
@@ -107,3 +104,4 @@ print(f"\nRMSE: {rmse}")
 print(f"MSE: {loss}")
 print(f"MAE: {mae}")
 print(f"R-SQUARED: {r2}")
+
